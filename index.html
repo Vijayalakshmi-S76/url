@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .search-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    input {
+      width: 250px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-box">
+    <h2>Search</h2>
+    <!-- Replace YOUR_FORMSPREE_URL with your own Formspree form action URL -->
+    <form action="https://formspree.io/f/https://formspree.io/f/xgvlpkra" method="POST">
+      <input type="text" name="search_query" placeholder="Enter your search..." required>
+      <br>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+</html>
